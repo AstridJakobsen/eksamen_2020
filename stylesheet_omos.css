@@ -1,0 +1,549 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+#wrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+
+/* NAVIGATION */
+
+header {
+	grid-column: 1 / 5;
+}
+
+#logo_mobile {
+	grid-column: 1 / 5;
+	
+	display: grid;
+	grid-template-columns: repeat(7, 1fr); 
+	
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+#logo_mobile img {
+	grid-column: 4 / 5;
+	width: 100%;
+}
+
+nav {
+	grid-column: 1 / 5;
+}
+
+	#navigation_list {
+		grid-column: 1 / 5;
+
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		
+		align-items: center;
+		list-style-type:none;
+		padding: 0;
+		margin: 0;
+		margin-top: 1%;
+		font-family: 'Cormorant Garamond', serif;
+		font-weight: 400;
+		font-size: 0.7em;
+	}
+
+		li a {
+			text-decoration: none;
+			color: #000;
+		}
+
+		li a:hover {
+			color: #fff;
+			background-color: #839385;
+
+			padding: 5%;
+
+		}
+
+
+			#forside {
+				grid-column: 1 / 2;
+				text-align: center;
+			}
+
+			#omos {
+				grid-column: 2 / 3;
+				text-align: center;
+				text-decoration: underline;
+			}
+
+
+
+			#logo {
+				grid-column: 6 / 8;
+				
+				display: none;
+				grid-template-columns: repeat(5, 1fr);
+			}
+
+				#logo_link {
+					grid-column: 1 / 6;
+
+					display: grid;
+					grid-template-columns: repeat(5, 1fr);
+				}
+
+					#logo #logo_link img { 
+						grid-column: 2 / 5;
+						width: 100%;
+					}
+
+					#logo_link:hover {
+						background-color: #fff;
+						padding: 0;
+					}
+
+
+
+			#webshop {
+				grid-column: 3 / 4;
+				text-align: center;
+			}
+
+			#kontakt {
+				grid-column: 4 / 5;
+				text-align: center;
+			}
+
+
+
+
+/*MAIN*/
+
+main {
+	grid-column: 1 / 5;
+	
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+	#historien_bag {
+		grid-column: 1 / 5;
+		
+		margin-top: 0;
+		padding-left: 10%;
+		padding-right: 10%;
+		padding-top: 5%;
+	}
+
+		#historien_bag h3 {
+			font-family: 'Cormorant Garamond', serif;
+			font-weight: 700;
+			font-size: 0.7em;
+			margin-bottom: 0;
+		}
+
+		#historien_bag p {
+			margin-top: 0;
+			line-height: 1.6;
+			font-size: 0.7em;
+		}
+
+		.hidden {
+			display: none;
+		}
+
+	#omos_billede1 {
+		grid-column: 1 / 3;
+		width: 100%;
+		margin-top: 10%;
+	}
+
+	#omos_billede2 {
+		grid-column: 3 / 5;
+		width: 100%;
+		margin-top: 10%;
+	}
+
+
+	#vores_team {
+		grid-column: 1 / 5;
+		padding-left: 10%;
+		padding-right: 10%;
+		padding-top: 5%;
+	}
+
+		#vores_team h3 {
+			font-family: 'Cormorant Garamond', serif;
+			font-weight: 700;
+			font-size: 0.7em;
+			margin-bottom: 0;
+		}
+
+		#vores_team p {
+			margin-top: 0;
+			line-height: 1.6;
+			font-size: 0.7em;
+		}
+
+
+
+
+
+/* FOOTER */
+
+footer {
+	grid-column: 1 / 5;
+	background-color: #E0D8CE;
+	text-align: center;
+	font-size: 0.7em;
+	
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	
+	margin-top: 5%;
+}
+
+h4 {
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: 700;
+	margin-bottom: 2%;
+}
+
+footer p {
+	margin: 0;
+	line-height: 1.6;
+}
+
+#adresse {
+	grid-column: 1 / 5;
+	margin-top: 5%;
+	margin-left: 0;
+}
+
+#kontakt_footer {
+	grid-column: 1 / 5;
+	margin-top: 5%;
+	margin-left: 0;
+}
+
+#some {
+	grid-column: 1 / 5;
+	margin-top: 5%;
+	margin-left: 0;
+	
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+}
+
+	#some h4 {
+		grid-column: 1 / 13;
+	}
+
+	#instagram {
+		grid-column: 6 / 7;
+	}
+
+		#instagram img {
+			width: 100%;
+		}
+
+	#facebook {
+		grid-column: 7 / 8;
+		margin-left: 8%;
+	}
+
+		#facebook img {
+			width: 100%;
+		}
+
+#cvr {
+	grid-column: 1 / 5;
+	text-align: center;
+	color: #A7A7A7;
+	margin-bottom: 1%;
+	margin-top: 4%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* DESKTOP VERSION STARTER */
+@media only screen and (min-width: 850px){
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+#wrapper {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+}
+
+
+/* NAVIGATION */
+
+header {
+	grid-column: 1 / 13;
+}
+
+	
+#logo_mobile {
+	grid-column: 1 / 5;
+	
+	display: none;
+	grid-template-columns: repeat(7, 1fr); 
+	
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+#logo_mobile img {
+	grid-column: 4 / 5;
+	width: 100%;
+}	
+	
+	
+nav {
+	grid-column: 1 / 13;
+}
+
+	#navigation_list {
+		grid-column: 1 / 13;
+
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		
+		align-items: center;
+		list-style-type:none;
+		padding: 0;
+		margin: 0;
+		margin-top: 1%;
+		font-family: 'Cormorant Garamond', serif;
+		font-weight: 400;
+		font-size: 1.2em;
+	}
+
+		li a {
+			text-decoration: none;
+			color: #000;
+		}
+
+		li a:hover {
+			color: #fff;
+			background-color: #839385;
+
+			padding: 5%;
+
+		}
+
+
+			#forside {
+				grid-column: 2 / 4;
+				text-align: center;
+			}
+
+			#omos {
+				grid-column: 4 / 6;
+				text-align: center;
+				text-decoration: underline;
+			}
+
+
+
+			#logo {
+				grid-column: 6 / 8;
+				
+				display: grid;
+				grid-template-columns: repeat(5, 1fr);
+			}
+
+				#logo_link {
+					grid-column: 1 / 6;
+
+					display: grid;
+					grid-template-columns: repeat(5, 1fr);
+				}
+
+					#logo #logo_link img { 
+						grid-column: 2 / 5;
+						width: 100%;
+					}
+
+					#logo_link:hover {
+						background-color: #fff;
+						padding: 0;
+					}
+
+
+
+			#webshop {
+				grid-column: 8 / 10;
+				text-align: center;
+			}
+
+			#kontakt {
+				grid-column: 10 / 12;
+				text-align: center;
+			}
+
+
+/*MAIN*/
+
+main {
+	grid-column: 1 / 13;
+	
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+}
+
+	#historien_bag {
+		grid-column: 1 / 7;
+		
+		margin-top: 4%;
+		padding-left: 15%;
+		padding-right: 15%;
+		padding-top: 40%;
+	}
+
+		#historien_bag h3 {
+			font-family: 'Cormorant Garamond', serif;
+			font-weight: 700;
+			font-size: 1.2em;
+			margin-bottom: 0;
+		}
+
+		#historien_bag p {
+			margin-top: 0;
+			line-height: 1.6;
+			font-size: 1.2em;
+		}
+
+	.hidden {
+	display: none;
+	}
+	
+	
+	#omos_billede1 {
+		grid-column: 7 / 13;
+		width: 100%;
+		margin-top: 4%;
+	}
+
+	#omos_billede2 {
+		grid-column: 1 / 7;
+		width: 100%;
+		margin-top: 0;
+	}
+
+
+	#vores_team {
+		grid-column: 7 / 13;
+		padding-left: 15%;
+		padding-right: 15%;
+		padding-top: 40%;
+	}
+
+		#vores_team h3 {
+			font-family: 'Cormorant Garamond', serif;
+			font-weight: 700;
+			font-size: 1.2em;
+			margin-bottom: 0;
+		}
+
+		#vores_team p {
+			margin-top: 0;
+			line-height: 1.6;
+			font-size: 1.2em;
+		}
+
+
+
+
+/* FOOTER */
+
+footer {
+	grid-column: 1 / 13;
+	background-color: #E0D8CE;
+	text-align: left;
+	font-size: 1.2em;
+	
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	
+	margin-top: 0;
+}
+
+h4 {
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: 700;
+	margin-bottom: 2%;
+}
+
+footer p {
+	margin: 0;
+	line-height: 1.6;
+}
+
+#adresse {
+	grid-column: 2 / 4;
+	margin-top: 15%;
+	margin-left: 20%;
+}
+
+#kontakt_footer {
+	grid-column: 6 / 8;
+	margin-top: 15%;
+	margin-left: 20%;
+}
+
+#some {
+	grid-column: 10 / 12;
+	margin-top: 15%;
+	margin-left: 20%;
+	
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+}
+
+	#some h4 {
+		grid-column: 1 / 6;
+	}
+
+	#instagram {
+		grid-column: 1 / 2;
+	}
+
+		#instagram img {
+			width: 100%;
+		}
+
+	#facebook {
+		grid-column: 2 / 3;
+		margin-left: 3%;
+	}
+
+		#facebook img {
+			width: 100%;
+		}
+
+#cvr {
+	grid-column: 1 / 13;
+	text-align: center;
+	color: #A7A7A7;
+	margin-bottom: 1%;
+	margin-top: 2%;
+}
+}
