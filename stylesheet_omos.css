@@ -188,6 +188,15 @@ main {
 			font-size: 0.7em;
 		}
 
+			#kontakt-knap {
+						font-weight: bold;
+						text-decoration: none;
+						color: #000;
+					}
+
+				#kontakt-knap:hover {
+					text-decoration: underline;
+				}
 
 
 
@@ -415,7 +424,7 @@ main {
 		margin-top: 4%;
 		padding-left: 15%;
 		padding-right: 15%;
-		padding-top: 40%;
+		padding-top: 25%;
 	}
 
 		#historien_bag h3 {
@@ -468,6 +477,16 @@ main {
 			line-height: 1.6;
 			font-size: 1.2em;
 		}
+	
+			#kontakt-knap {
+				font-weight: bold;
+				text-decoration: none;
+				color: #000;
+			}
+
+			#kontakt-knap:hover {
+				text-decoration: underline;
+			}
 
 
 
